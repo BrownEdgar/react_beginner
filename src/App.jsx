@@ -1,12 +1,20 @@
+import { useState } from 'react';
 import './App.css'
-import Post from "./components/Post/Post";
+import Posts from './components/Posts/Posts';
 
 function App() {
+  const [isHidden, setIsHidden] = useState(true);
+
+  const handleClick = () => {
+    setIsHidden(!isHidden)
+  }
   return (
-    <main className="App">
-      <Post />
-    </main>
+    <div className='App'>
+      <button onClick={handleClick} >{isHidden ? "show" : "hide"}</button>
+      <Posts />
+    </div>
   )
+
 }
 
 export default App

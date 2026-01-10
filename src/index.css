@@ -19,3 +19,14 @@ a {
 ul {
   list-style: none;
 }
+
+button {
+  font-weight: 600;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  background-color: #0fcc4e;
+  color: #ecf0f1;
+}

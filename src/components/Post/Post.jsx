@@ -1,11 +1,16 @@
 import './Post.css'
 
-function Post() {
+
+// props = { }
+function Post({ hidden, variant = 'dark', title, desc }) {
+  if (hidden) {
+    return null;
+  }
+
   return (
     <div className="post">
-      <h2>This is a Title Component</h2>
-      <p>It is rendered inside the App component.</p>
-      <button>WOW</button>
+      <h2>{title}</h2>
+      <p className={variant}>{desc}</p>
     </div>
   )
 }
