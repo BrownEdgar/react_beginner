@@ -26,18 +26,31 @@ function Posts() {
       desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia molestias ipsam placeat.'
     },
   ]);
+  const [activeId, setActiveId] = useState(null);
+  const [countOfPosts, setCountOfPosts] = useState(10);
 
   const handleSort = () => {
     const newArray = posts.toSorted((a, b) => a.title.localeCompare(b.title))
     setposts(newArray)
   }
+  const handleActive = (id) => setActiveId(id)
+
 
   return <div>
-    <button onClick={handleSort} >sort</button>
+    <button onClick={handleSort}>sort</button>
     {
-      posts.map(elem => {
-        return <Post key={elem.id} title={elem.title} desc={elem.desc} variant='dark' />
-      })
+      posts
+        .slice(0, countOfPosts)
+        .map(elem => {
+          return <Post
+            key={elem.id}
+            title={elem.title}
+            desc={elem.desc}
+            variant='dark'
+            active={elem.id === activeId}
+            handleActive={() => handleActive(elem.id)}
+          />
+        })
     }
   </div>;
 }

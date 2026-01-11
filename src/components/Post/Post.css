@@ -2,7 +2,13 @@
   font-size: 28px;
   text-align: left;
   color: rgb(255, 255, 255);
-  background: #10ce54;
+  background-color: #111;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.post h2.active {
+  background-color: #f39c12;
 }
 
 .post {
