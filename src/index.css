@@ -20,31 +20,3 @@ a {
 ul {
   list-style: none;
 }
-
-button {
-  font-weight: 600;
-  border: 0;
-  border-radius: 4px;
-  font-size: 16px;
-  padding: 0.6rem 1rem;
-  cursor: pointer;
-  background-color: #0fcc4e;
-  color: #ecf0f1;
-  margin: 1rem;
-}
-
-button.active {
-  background-color: #f39c12;
-  transform: translateY(-4px);
-  transition: all 0.3s ease;
-}
-
-button.delete {
-  background-color: #e74c3c;
-  margin-left: 0.5rem;
-}
-
-ol {
-
-  padding-left: 20px;
-}
