@@ -39,6 +39,11 @@ button.active {
   transition: all 0.3s ease;
 }
 
+button.delete {
+  background-color: #e74c3c;
+  margin-left: 0.5rem;
+}
+
 ol {
 
   padding-left: 20px;
