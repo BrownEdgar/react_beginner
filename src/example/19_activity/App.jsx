@@ -14,10 +14,13 @@ function App() {
 
   return <div>
     <Activity mode={isOpen ? "visible" : "hidden"}>
-      <Child />
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dolor, fugit minus modi ab iusto adipisci corporis omnis accusamus distinctio sint, possimus autem dolorum nam. Saepe error minus id labore!</p>
     </Activity>
+
+
+
     <button onClick={() => setIsOpen(!isOpen)}>Open Activity</button>
-  </div >;
+  </div>;
 }
 
 export default App;
