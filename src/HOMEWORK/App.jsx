@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [post, setPost] = useState([]);
@@ -9,20 +9,20 @@ function App() {
       .then(json => {
         setPost(json)
         console.log(json);
-        
+
       })
   }
-  
+
   useEffect(() => {
     fetchData()
-    
+
   }, [])
   return <div>
-     <ul>
+    <ul>
       {
         post.map(post => <li>{post.title}</li>)
       }
-     </ul>
+    </ul>
   </div>;
 }
 

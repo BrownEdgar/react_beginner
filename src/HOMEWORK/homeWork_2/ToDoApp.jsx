@@ -16,13 +16,6 @@ export default function ToDoApp() {
     setTodos([...todos, newTodo]);
     setinput("");
   };
-  const toggleComplete = (id) => {
-    setTodos(
-      todos.map((todo) =>
-        todo.id === id ? { ...todo, completed: !todo.completed } : todo,
-      ),
-    );
-  };
 
   const handleDelete = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
@@ -44,7 +37,7 @@ export default function ToDoApp() {
         <ul className="todo__list">
           {todos.map((todo) => (
             <li key={todo.id} className={todo.completed ? "completed" : ""}>
-              <span onClick={() => toggleComplete(todo.id)}>{todo.text}</span>
+              <span>{todo.text}</span>
               <button onClick={() => handleDelete(todo.id)}>Delete</button>
             </li>
           ))}
