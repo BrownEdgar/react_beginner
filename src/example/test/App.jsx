@@ -1,10 +1,11 @@
 import s from './App.module.css';
-console.log(s);
+
+const email = import.meta.env.VITE_EMAIL;
 
 function App() {
   return (
     <div className={s.App}>
-      <h1 className={s.title}>Hello World</h1>
+      <h1>email: {email}</h1>
     </div>
   );
 }
