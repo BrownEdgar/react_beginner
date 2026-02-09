@@ -1,11 +1,11 @@
+import { useCallback, useState } from 'react';
 import s from './App.module.css';
 
-const email = import.meta.env.VITE_EMAIL;
-
 function App() {
+
   return (
     <div className={s.App}>
-      <h1>email: {email}</h1>
+      <h1>Lesson 1</h1>
     </div>
   );
 }
