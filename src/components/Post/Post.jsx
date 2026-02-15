@@ -1,5 +1,4 @@
-import './Post.css'
-
+import './Post.css';
 
 // props = { }
 function Post({ hidden, variant = 'dark', title, desc, active, handleActive }) {
@@ -8,11 +7,14 @@ function Post({ hidden, variant = 'dark', title, desc, active, handleActive }) {
   }
 
   return (
-    <div className="post" onClick={handleActive}>
+    <div
+      className='post'
+      onClick={handleActive}
+    >
       <h2 className={active ? 'active' : ''}>{title}</h2>
       <p className={variant}>{desc}</p>
     </div>
-  )
+  );
 }
 
-export default Post
+export default Post;

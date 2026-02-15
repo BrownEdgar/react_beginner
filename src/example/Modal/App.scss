@@ -1,0 +1,23 @@
+.App {
+  max-width: 1440px;
+  margin: 20px auto;
+  &_List {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: start;
+    & > li {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 10px;
+      padding: 1rem;
+      font-size: 20px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column;
+      height: 230px;
+      width: 250px;
+    }
+  }
+}

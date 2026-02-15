@@ -21,19 +21,18 @@ const toggleTodo = (state, id) => {
   return {
     ...state,
     todos: newArray,
-
-  }
-}
+  };
+};
 
 const updateUnCompleted = (state) => {
   const unCompleted = state.todos.reduce((acc, todo) => {
-    return !todo.completed ? acc += 1 : acc;
+    return !todo.completed ? (acc += 1) : acc;
   }, 0);
   return {
     ...state,
     uncompleted: unCompleted,
-  }
-}
+  };
+};
 
 function reducer(state = initialState, action) {
   switch (action.type) {

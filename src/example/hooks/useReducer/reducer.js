@@ -5,7 +5,7 @@ export const initialState = [];
 export const initStateFn = () => {
   const randomArr = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100));
   return randomArr;
-}
+};
 
 //action =  { type: "plus"}
 function reducer(state, action) {
@@ -15,7 +15,7 @@ function reducer(state, action) {
     case POP:
       return state.slice(0, -1);
     case MULTIPLY:
-      return state.map(x => x * 2);
+      return state.map((x) => x * 2);
     case SORTARRAY:
       return state.toSorted((a, b) => a - b);
     case RESET:
