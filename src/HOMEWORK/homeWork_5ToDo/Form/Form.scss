@@ -1,0 +1,39 @@
+.Form{
+    width: 100%;
+    &__input{
+        width: 90%;
+        display: inline-block;
+        margin-top: 20px;
+        :focus{
+        outline: none;
+    }
+    input{
+            width: 100%;
+            font-size: 20px;
+            padding: 0.5rem 1rem;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 2px solid #2d443a;
+            &::placeholder{
+                color: #2d443a;
+            }
+        }
+        &-field{
+            flex: 1;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            color: #333;
+        }
+        &-form-button{
+            width: 10%;
+            padding: 12px 16px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+        }
+    }
+}
