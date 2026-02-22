@@ -1,0 +1,37 @@
+@use '../../../scss/variables';
+
+.Form {
+  width: 100%;
+  &__input {
+    width: 90%;
+    display: inline-block;
+    margin-top: 20px;
+    input {
+      width: 100%;
+      font-size: 20px;
+      padding: 0.5rem 1rem;
+      background-color: transparent;
+      border: 0;
+      border-bottom: 2px solid #2d443a;
+      &::placeholder {
+        color: #564c4c;
+      }
+    }
+  }
+  &__button {
+    width: 10%;
+    display: inline-block;
+    margin-top: 20px;
+    input {
+      width: 80%;
+      margin-left: 10px;
+      font-size: 20px;
+      padding: 0.5rem 1rem;
+      background-color: variables.$tetx-color;
+      color: #fff;
+      border: 0;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+}
