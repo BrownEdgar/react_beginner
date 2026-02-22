@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.scss';
 import Modal from './Modal/Modal.jsx';
-import { title, children, isOpen } from 'react';
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,13 +13,9 @@ function App() {
         title='Exit'
         isOpen={isOpen}
         setIsOpen={setIsOpen}
-        hideCloseIcon
+        variant='dark'
       >
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem voluptas aliquam
-          doloribus, similique hic placeat dicta cupiditate facere eum, distinctio aperiam nulla
-          impedit id, molestias magnam minima laboriosam recusandae. Vero.
-        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam at dolor cum rem atque adipisci modi nisi saepe distinctio perferendis. Possimus facere quos, corporis labore repudiandae qui et soluta libero.</p>
       </Modal>
     </div>
   );

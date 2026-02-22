@@ -1,10 +1,12 @@
-import { useRef } from 'react';
 import './Modal.scss';
 
-function Modal({ title, children }, isOpen, setIsOpen, hideCloseIcon = false) {
+function Modal({ title, children, isOpen, setIsOpen, hideCloseIcon = false, variant = 'default' }) {
+
+  if (!isOpen) return null;
+
   return (
-    <div className='Modal'>
-      <div className='Modal__content'>
+    <div className={`Modal`}  >
+      <div className={`Modal__content Modal__content-${variant}`} >
         {!hideCloseIcon && (
           <span
             className='Modal__close'
