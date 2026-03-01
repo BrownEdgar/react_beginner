@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import App from './HOMEWORK/homework_6/App';
+import App from './HOMEWORK/homeWork_7/App.jsx';
 
 
 
