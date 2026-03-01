@@ -1,45 +1,63 @@
 import axios from 'axios';
-import { useEffect, useState } from "react";
+import { useEffect } from 'react';
 import Blog from '../Blog/Blog';
-
+import BlogLoader from '../../Loadading/BlogLoader';
 import './Blogs.scss';
 
-function Blogs({ setblog, toggleOpen }) {
-  const [blogs, setBlogs] = useState([]);
-
+function Blogs({ setblog, toggleOpen, searchTerm, blogs, loading, setLoading, fetchData, setBlogs }) {
   const handleDelete = (id) => {
-    axios.delete(`http://localhost:3000/blogs/${id}`)
-      .then(res => {
-        console.log(res);
+    axios
+      .delete(`http://localhost:3000/blogs/${id}`)
+      .then(() => {
         window.location.reload();
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
-  }
+  };
 
   useEffect(() => {
-    axios.get('http://localhost:3000/blogs')
-      .then(res => {
-        setBlogs(res.data);
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    setLoading(true);
+    fetchData();
   }, []);
 
+  useEffect(() => {
+    setLoading(true);
+    axios
+      .get(`http://localhost:3000/blogs?title:contains=${searchTerm}`)
+      .then((res) => {
+        setLoading(false);
+        setBlogs(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, [searchTerm]);
 
   const handleEdit = (blog) => {
     setblog(blog);
     toggleOpen();
-  }
+  };
 
-
-  return <div className="blogs">
-    {blogs.map(blog => (
-      <Blog key={blog.id} blog={blog} handleDelete={handleDelete} handleEdit={handleEdit} />
-    ))}
-  </div>;
+  return (
+    <div className='blogs'>
+      {loading ? (
+        <BlogLoader
+          backgroundColor='#f3f3f3'
+          foregroundColor='#776b6b'
+        />
+      ) : (
+        blogs.map((blog) => (
+          <Blog
+            key={blog.id}
+            blog={blog}
+            handleDelete={handleDelete}
+            handleEdit={handleEdit}
+          />
+        ))
+      )}
+    </div>
+  );
 }
 
 export default Blogs;

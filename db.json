@@ -1,12 +1,84 @@
 {
   "blogs": [
     {
-      "title": "My new blog 32",
-      "content": "My new blog. desc 32",
-      "image": "https://images.unsplash.com/photo-1761839257661-c2392c65ea72?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "author": " John Doe",
-      "date": "2026-02-21",
-      "id": "1772278973604"
+      "title": "a",
+      "content": "dasdas",
+      "image": "https://images.unsplash.com/photo-1772290776039-f69b60d78aa3?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "author": "asdsad",
+      "date": "2026-03-28",
+      "id": "1772379225323"
+    },
+    {
+      "id": "1772379225324",
+      "title": "Universe",
+      "content": "dasdas",
+      "image": "https://images.unsplash.com/photo-1772290776039-f69b60d78aa3?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "author": "asdsad",
+      "date": "2026-03-28"
+    },
+    {
+      "id": "1772379225325",
+      "title": "Typograpy",
+      "content": "dasdas",
+      "image": "https://images.unsplash.com/photo-1772290776039-f69b60d78aa3?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "author": "asdsad",
+      "date": "2026-03-28"
+    },
+    {
+      "id": "1772379225326",
+      "title": "Blog N2 ",
+      "content": "dasdas",
+      "image": "https://images.unsplash.com/photo-1772290776039-f69b60d78aa3?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "author": "asdsad",
+      "date": "2026-03-28"
+    },
+    {
+      "id": "1772379225327",
+      "title": "abcd",
+      "content": "dasdas",
+      "image": "https://images.unsplash.com/photo-1772290776039-f69b60d78aa3?q=80&w=1365&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "author": "asdsad",
+      "date": "2026-03-28"
+    },
+    {
+      "id": "1772382995829",
+      "title": "asdassda",
+      "content": "dasdasdsadas",
+      "image": "https://plus.unsplash.com/premium_photo-1749666992791-53362d6dc507?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "author": "dasdas",
+      "date": "2026-03-20"
+    },
+    {
+      "id": "1772383054433",
+      "title": "dsadsad",
+      "content": "dsadasd",
+      "image": "https://plus.unsplash.com/premium_photo-1749666992791-53362d6dc507?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "author": "dsadsa",
+      "date": "2026-03-20"
+    },
+    {
+      "id": "1772383137783",
+      "title": "sadsds",
+      "content": "dsadsads",
+      "image": "https://plus.unsplash.com/premium_photo-1749666992791-53362d6dc507?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "author": "asdsads",
+      "date": "2026-03-19"
+    },
+    {
+      "id": "1772383194078",
+      "title": "asddsasd",
+      "content": "dsadsadsa",
+      "image": "https://plus.unsplash.com/premium_photo-1749666992791-53362d6dc507?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "author": "sadsa",
+      "date": "2026-03-11"
+    },
+    {
+      "id": "1772383284667",
+      "title": "asdsdsa",
+      "content": "dsadsa",
+      "image": "https://plus.unsplash.com/premium_photo-1749666992791-53362d6dc507?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "author": "sddadsa",
+      "date": "2026-03-25"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

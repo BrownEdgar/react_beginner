@@ -1,10 +1,7 @@
-
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as yup from 'yup';
 
-
-
-function MainForm({ handleSubmit, blog, }) {
+function MainForm({ handleSubmit, blog }) {
   const initalValues = {
     title: blog?.title || '',
     content: blog?.content || '',
@@ -13,46 +10,81 @@ function MainForm({ handleSubmit, blog, }) {
     date: blog?.date || '',
   };
 
-
-
   const validationSchema = yup.object({
-    title: yup.string().required("Title is required"),
-    content: yup.string().required("Content is required"),
-    image: yup.string().required("Image is required"),
-    author: yup.string().required("Author is required"),
-    date: yup.string().required("Date is required"),
+    title: yup.string().required('Title is required'),
+    content: yup.string().required('Content is required'),
+    image: yup.string().required('Image is required'),
+    author: yup.string().required('Author is required'),
+    date: yup.string().required('Date is required'),
   });
 
-  return <div>
-    <Formik
-      initialValues={initalValues}
-      onSubmit={handleSubmit}
-      validationSchema={validationSchema}
-    >
-      {
-        (formik) => {
-          console.log(formik);
-
+  return (
+    <div>
+      <Formik
+        initialValues={initalValues}
+        onSubmit={handleSubmit}
+        validationSchema={validationSchema}
+      >
+        {() => {
           return (
-
             <Form>
-              <Field name="title" placeholder="Title" type="text" />
-              <ErrorMessage name="title" component="div" className="error" />
-              <Field name="content" placeholder="Content" as="textarea" />
-              <ErrorMessage name="content" component="div" className="error" />
-              <Field name="image" placeholder="Image URL" type="url" />
-              <ErrorMessage name="image" component="div" className="error" />
-              <Field name="author" placeholder="Author" type="text" />
-              <ErrorMessage name="author" component="div" className="error" />
-              <Field name="date" placeholder="Date" type="date" />
-              <ErrorMessage name="date" component="div" className="error" />
-              <button type="submit">Submit</button>
+              <Field
+                name='title'
+                placeholder='Title'
+                type='text'
+              />
+              <ErrorMessage
+                name='title'
+                component='div'
+                className='error'
+              />
+              <Field
+                name='content'
+                placeholder='Content'
+                as='textarea'
+              />
+              <ErrorMessage
+                name='content'
+                component='div'
+                className='error'
+              />
+              <Field
+                name='image'
+                placeholder='Image URL'
+                type='url'
+              />
+              <ErrorMessage
+                name='image'
+                component='div'
+                className='error'
+              />
+              <Field
+                name='author'
+                placeholder='Author'
+                type='text'
+              />
+              <ErrorMessage
+                name='author'
+                component='div'
+                className='error'
+              />
+              <Field
+                name='date'
+                placeholder='Date'
+                type='date'
+              />
+              <ErrorMessage
+                name='date'
+                component='div'
+                className='error'
+              />
+              <button type='submit'>Submit</button>
             </Form>
-          )
-        }
-      }
-    </Formik>
-  </div>;
+          );
+        }}
+      </Formik>
+    </div>
+  );
 }
 
 export default MainForm;
